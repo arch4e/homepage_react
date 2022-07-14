@@ -4,8 +4,9 @@ import { Link, Outlet, Route, Routes } from "react-router-dom";
 import About   from "./About";
 import Gallery from "./Gallery";
 
-/* Stylesheets */
+/* stylesheets */
 import "../styles/global.css";
+import "../styles/app.css";
 
 function App() {
   return (
@@ -24,12 +25,15 @@ function App() {
 function Layout() {
   return(
     <>
-      <ul id="nav">
-        <li>
-          <Link to="/">about</Link>
-          <Link to="/gallery">gallery</Link>
-        </li>
-      </ul>
+      <div id="header">
+        <span className="logo">
+          <Link to="/">arch<span>IV</span>e</Link>
+        </span>
+        <ul className="nav">
+          <li><Link to="/posts">Log</Link></li>
+          <li><Link to="/gallery">Gallery</Link></li>
+        </ul>
+      </div>
 
       <div id="main">
         <Outlet />
