@@ -2,6 +2,7 @@ import { Link, Outlet, Route, Routes } from "react-router-dom";
 
 /* components */
 import About   from "./About";
+import Article from "./Article";
 import Gallery from "./Gallery";
 import Log     from "./Log";
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index              element={ <About />   } />
           <Route path="posts"       element={ <Log />     } />
+          <Route path="posts/:slug" element={ <Article /> } />
           <Route path="gallery"     element={ <Gallery /> } />
         </Route>
         <Route path="*" element={ <NotFound /> } />
