@@ -3,6 +3,7 @@ import { Link, Outlet, Route, Routes } from "react-router-dom";
 /* components */
 import About   from "./About";
 import Gallery from "./Gallery";
+import Log     from "./Log";
 
 /* stylesheets */
 import "../styles/global.css";
@@ -13,8 +14,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index          element={ <About />   } />
-          <Route path="gallery" element={ <Gallery /> } />
+          <Route index              element={ <About />   } />
+          <Route path="posts"       element={ <Log />     } />
+          <Route path="gallery"     element={ <Gallery /> } />
         </Route>
         <Route path="*" element={ <NotFound /> } />
       </Routes>

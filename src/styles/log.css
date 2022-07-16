@@ -1,0 +1,41 @@
+.posts {
+  margin        : 0;
+  padding       : 0;
+  width         : 100%;
+  height        : auto;
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+}
+
+.post {
+  margin     : 0 0 1rem 0;
+  padding    : 0.2rem 0 0.4rem 1rem;
+  width      : 80vw;
+  height     : auto;
+  border-left: 0.1rem solid #478384;
+}
+
+.post-title {
+  font-size: 1.5rem;
+}
+
+.post-date {
+  margin   : 0.2rem 0 0 0;
+  padding  : 0;
+  font-size: 1rem;
+}
+
+.post-tags {
+  margin        : 0.2rem 0 0 0;
+  padding       : 0;
+  display       : flex;
+  flex-direction: row;
+  font-size     : 1rem;
+}
+
+.post-tag {
+  margin   : 0 0 0 0.5rem;
+  padding  : 0;
+  font-size: 1rem;
+}
