@@ -9,10 +9,13 @@
 }
 
 .article {
-  @apply w-8/12 sm:w-full md:w-11/12 lg:w-10/12 xl:w-7/12;
-  margin   : 0;
-  padding  : 0;
+  @apply w-8/12 sm:w-full md:w-11/12 lg:w-3/4 xl:w-3/4;
+  @apply sm:border-b-2 md:border-b-2 lg:border-r-2 xl:border-r-2;
+  margin   : 0 0 2rem;
+  padding  : 0 2rem;
   font-size: 1rem;
+  border-style  : dashed;
+  border-color  : #478384;
 }
 
 .article a {

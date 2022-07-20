@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 
+/* components */
+import AdsCard from "./AdsCard.jsx";
+
 /* stylesheets */
+import "../styles/ads.css";
 import "../styles/article.css";
 
 function Article() {
@@ -16,8 +20,14 @@ function Article() {
 
     return (
       <>
-        <div className="article">
-          <ReactMarkdown children={ article } />
+        <div className="container">
+          <div className="article">
+            <ReactMarkdown children={ article } />
+          </div>
+
+          <div className="ads-card">
+            <AdsCard />
+          </div>
         </div>
       </>
     )
