@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 /* stylesheets */
 import "../styles/about.css";
 
@@ -8,6 +10,10 @@ import twitter from "../assets/icons/twitter.png";
 import pixiv from "../assets/icons/pixiv.png";
 
 function About() {
+  useEffect(() => {
+    document.title = "About - archIVe";
+  }, []);
+
   return(
     <>
       <div className="profile">

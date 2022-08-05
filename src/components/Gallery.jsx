@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 /* stylesheets */
 import "../styles/gallery.css";
 
@@ -9,6 +11,10 @@ import img3 from "../assets/pages/gallery/aw.png";
 import img4 from "../assets/pages/gallery/mz.png";
 
 function Gallery() {
+  useEffect(() => {
+    document.title = "Gallery - archIVe";
+  }, []);
+
   return(
     <>
       <h1>Gallery</h1>

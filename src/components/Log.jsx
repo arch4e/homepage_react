@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 /* components */
@@ -11,6 +12,10 @@ import "../styles/ads.css";
 import "../styles/log.css";
 
 function Log() {
+  useEffect(() => {
+    document.title = "Log - archIVe";
+  }, []);
+
   return(
     <>
       <div className="container">
