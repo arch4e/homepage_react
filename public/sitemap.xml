@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <url>
+      <loc>https://arch4e.com/</loc>
+    </url>
+    <url>
+      <loc>https://arch4e.com/gallery</loc>
+    </url>
+    <url>
+      <loc>https://arch4e.com/posts</loc>
+    </url>
+    <url>
+      <loc>https://arch4e.com/posts/writeup-nazotokiCTF-2022</loc>
+    </url>
+    <url>
+      <loc>https://arch4e.com/posts/develop-react-blog</loc>
+    </url>
+    <url>
+      <loc>https://arch4e.com/posts/blender-numpy-error</loc>
+    </url>
+    <url>
+      <loc>https://arch4e.com/posts/blender-vtxg-rename-script</loc>
+    </url>
+    <url>
+      <loc>https://arch4e.com/posts/blender-manually-install-tesselate-texture-plane</loc>
+    </url>
+</urlset>
