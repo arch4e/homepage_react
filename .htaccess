@@ -1,6 +1,8 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^(.*)$ https://arch4e.com/$1 [R=301,L]
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://arch4e.com/$1 [R=301,L]
   RewriteRule ^index\.html$ - [L]
