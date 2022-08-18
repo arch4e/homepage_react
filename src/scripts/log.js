@@ -1,5 +1,11 @@
 export const posts = [
   {
+    "title": "[Windows] Windowsでrsyncのようなファイル同期を行う",
+    "slug" : "rsync-like-file-sync-on-windows",
+    "date" : "2022-08-18",
+    "tags" : ["windows", "rsync", "robocopy"]
+  },
+  {
     "title": "nazotokiCTF 2022 writeup",
     "slug" : "writeup-nazotokiCTF-2022",
     "date" : "2022-07-18",
