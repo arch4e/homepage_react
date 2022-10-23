@@ -1,4 +1,8 @@
 import { useEffect } from 'react';
+import { Link } from "react-router-dom";
+
+/* scripts */
+import { posts } from "../scripts/log.js";
 
 /* stylesheets */
 import "../styles/about.css";
@@ -28,6 +32,33 @@ function About() {
             <a href="https://www.pixiv.net/users/20493799"><img src={ pixiv } alt="pixiv" /></a>
           </div>
         </div>
+      </div>
+
+      <div className="recent-posts">
+        <h2>Recent Posts</h2>
+        <ul className="posts">
+            {
+              (posts.slice(0, 3)).map(post =>
+                <li className="post" key={ post["slug"] }>
+                  <Link to={ `posts/${post["slug"]}` }>
+                    <p className="post-title">{ post["title"] }</p>
+                    <p className="post-date">date: { post["date"] }</p>
+                    <>
+                      <span className="post-tags">
+                        <p>tag: </p>
+                        {
+                          post["tags"].map(tag => <p className="post-tag" key={ tag }>{ tag }</p>)
+                        }
+                      </span>
+                    </>
+                  </Link>
+                </li>
+              )
+            }
+          </ul>
+          <span className="jump-to-posts">
+            <Link to={ `posts` } className="link">show all posts &gt;&gt;&gt;</Link>
+          </span>
       </div>
     </>
   );
