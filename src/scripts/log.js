@@ -1,5 +1,11 @@
 export const posts = [
   {
+    "title": "ブログ執筆言語をMarkdownからAsciiDocに置き換える",
+    "slug" : "replace-blog-language",
+    "date" : "2022-11-06",
+    "tags" : ["React", "AsciiDoc"]
+  },
+  {
     "title": "[Windows] Windowsでrsyncのようなファイル同期を行う",
     "slug" : "rsync-like-file-sync-on-windows",
     "date" : "2022-08-18",
