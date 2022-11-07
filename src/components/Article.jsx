@@ -1,5 +1,5 @@
+import Asciidoctor from "asciidoctor";
 import { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
 
 /* components */
 import AdsCard from "./AdsCard.jsx";
@@ -12,6 +12,7 @@ import "../styles/ads.css";
 import "../styles/article.css";
 
 function Article() {
+  const asciidoctor = Asciidoctor();
   const [article, setArticle] = useState("");
   const slug = document.location.pathname.split("/").pop();
   const post = posts.find(post => post.slug === slug);
@@ -19,20 +20,22 @@ function Article() {
   useEffect(() => {
     document.title = `${post.title} - archIVe`;
 
-    fetch(`https://arch4e.com/static/posts/${slug}.md`).then(res => {
+    fetch(`https://arch4e.com/static/posts/${slug}.adoc`).then(res => {
       res.text().then(text => {
-        setArticle(text);
+        setArticle(asciidoctor.convert(text))
       });
     });
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
       <div className="container">
         <div className="article">
-          <ReactMarkdown children={ article } />
+          <h1>{ post.title }</h1>
+          <span dangerouslySetInnerHTML={{
+            __html: article
+          }}>
+          </span>
         </div>
 
         <div className="ads-card">

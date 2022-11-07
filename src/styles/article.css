@@ -1,3 +1,8 @@
+video {
+  margin : 2vh auto;
+  padding: 0;
+}
+
 .article ul {
   margin         : 0 0 0 2rem;
   list-style-type: square;
@@ -35,4 +40,13 @@
   max-height    : 40vh;
   user-select   : none;
   pointer-events: none;
+}
+
+.content {
+  margin-bottom: 1.5rem;
+}
+
+.article .icon {
+  margin: 2rem;
+  width : 4vw;
 }
