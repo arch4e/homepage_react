@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 /* stylesheets */
 import "../styles/gallery.css";
