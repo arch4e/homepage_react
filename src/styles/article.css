@@ -14,13 +14,11 @@ video {
 }
 
 .article {
-  @apply w-8/12 sm:w-full md:w-11/12 lg:w-3/4 xl:w-3/4;
-  @apply sm:border-b-2 md:border-b-2 lg:border-r-2 xl:border-r-2;
   margin   : 0 0 2rem;
   padding  : 0 2rem;
+  width    : 65%;
+  height   : auto;
   font-size: 1rem;
-  border-style  : dashed;
-  border-color  : #478384;
 }
 
 .article a {
@@ -49,4 +47,25 @@ video {
 .article .icon {
   margin: 2rem;
   width : 4vw;
+}
+
+@media (width <= 768px) {
+  .article {
+    width: 100%;
+    border-bottom: #478384 dashed 2px;
+  }
+}
+
+@media (768px < width <= 1024px) {
+  .article {
+    width: 90%;
+    border-bottom: #478384 dashed 2px;
+  }
+}
+
+@media (width > 1024px) {
+  .article {
+    width: 75%;
+    border-right: #478384 dashed 2px;
+  }
 }

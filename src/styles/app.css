@@ -1,19 +1,32 @@
+/*
+### media ###
+sm: ~ 768
+md: ~ 1024
+lg: ~ 1280
+xl: 1281 ~
+*/
+
 #error-404 {
-  @apply flex flex-row sm:flex-col space-x-4;
   margin         : 0;
   padding        : 0;
   width          : 100%;
   height         : 100%;
+  display        : flex;
+  flex-direction : row;
   align-items    : center;
   justify-content: center;
   font-size      : 7vh;
 }
 
+#error-404 span {
+  margin: 0 .5rem;
+}
+
 #footer {
   margin    : 2rem 0 0 0;
-  padding   : 1em 1rem;
+  padding   : 0.3rem 0;
   width     : 100%;
-  height    : 4%;
+  height    : auto;
   text-align: center;
   font-size : 1rem;
   border-top: 0.2rem solid #478384;
@@ -23,7 +36,7 @@
   width          : 100%;
   height         : 6%;
   margin         : 0 0 2rem 0;
-  padding        : 0.2rem;
+  padding        : 0.2rem 0;
   display        : flex;
   flex-direction : row;
   align-items    : center;
@@ -34,7 +47,7 @@
 
 #main {
   margin         : 0;
-  padding        : 1rem 2rem;
+  padding        : 0;
   width          : 100%;
   min-height     : 85%;
   display        : flex;
@@ -81,4 +94,15 @@
 .nav li {
   margin : 0 0 0 1rem;
   padding: 0;
+}
+
+@media (width <= 768px) {
+  #error-404 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main {
+    padding: 1rem 0;
+  }
 }
