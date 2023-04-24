@@ -1,5 +1,11 @@
 export const posts = [
   {
+    "title": "Desktop版 Google Driveのボリュームラベルを変更する",
+    "slug" : "change_volume_label_of_google_drive_for_desktop",
+    "date" : "2023-04-24",
+    "tags" : ["Windows", "Google Drive"]
+  },
+  {
     "title": "ブログ執筆言語をMarkdownからAsciiDocに置き換える",
     "slug" : "replace-blog-language",
     "date" : "2022-11-06",
