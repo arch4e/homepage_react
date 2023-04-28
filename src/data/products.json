@@ -7,11 +7,13 @@
                 "FBXデータのみ版は非商用利用のみ、",
                 "データ一式版は同梱している利用規約の範囲内でご使用ください。"
             ],
-            "product_page": {
-                "label": "Booth",
-                "link" : "https://arch4e.booth.pm/items/4711126"
-            },
-            "images": [
+            "product_page": [
+                {
+                    "label": "Booth",
+                    "link" : "https://arch4e.booth.pm/items/4711126"
+                }
+            ],
+            "image": [
                 "https://s2.booth.pm/b1ca9db0-972f-4630-81db-608e5f62176c/i/4711126/c6ed546c-e649-420a-ba0e-9d412fdd6bca_base_resized.jpg",
                 "https://s2.booth.pm/b1ca9db0-972f-4630-81db-608e5f62176c/i/4711126/6fe8d02d-bb2c-430d-a9e9-a006e317a1ea_base_resized.jpg"
             ]
@@ -23,11 +25,13 @@
                 "FBXデータのみ版は非商用利用のみ、",
                 "データ一式版は同梱している利用規約の範囲内でご使用ください。"
             ],
-            "product_page": {
-                "label": "Booth",
-                "link" : "https://arch4e.booth.pm/items/4702434"
-            },
-            "images": [
+            "product_page": [
+                {
+                    "label": "Booth",
+                    "link" : "https://arch4e.booth.pm/items/4702434"
+                }
+            ],
+            "image": [
                 "https://s2.booth.pm/b1ca9db0-972f-4630-81db-608e5f62176c/i/4702434/5ac82f26-c112-431e-b699-3f53e9060288_base_resized.jpg"
             ]
         },
@@ -36,11 +40,13 @@
             "description" : [
                 "BlenderのMesh/Curve編集でスナップショットを作成・管理するアドオンです。"
             ],
-            "product_page": {
-                "label": "Booth",
-                "link" : "https://arch4e.booth.pm/items/4694745"
-            },
-            "images": [
+            "product_page": [
+                {
+                    "label": "Booth",
+                    "link" : "https://arch4e.booth.pm/items/4694745"
+                }
+            ],
+            "image": [
                 ""
             ]
         },
@@ -49,11 +55,17 @@
             "description" : [
                 "BlenderブラシのBlend Modeをショートカット登録できるようにするアドオンです。"
             ],
-            "product_page": {
-                "label": "Booth",
-                "link" : "https://arch4e.booth.pm/items/4566568"
-            },
-            "images": [
+            "product_page": [
+                {
+                    "label": "Booth",
+                    "link" : "https://arch4e.booth.pm/items/4566568"
+                },
+                {
+                    "label": "GitHub",
+                    "link" : "https://github.com/arch4e/bpgrip"
+                }
+            ],
+            "image": [
                 "https://s2.booth.pm/b1ca9db0-972f-4630-81db-608e5f62176c/i/4566568/4eea9d42-6a52-4dfc-8d6b-d0f004e1a0cb_base_resized.jpg"
             ]
         }
