@@ -1,8 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
-
-/* scripts */
-import { posts } from "../scripts/log.js";
 
 /* stylesheets */
 import "../styles/about.css";
@@ -14,52 +11,40 @@ import twitter from "../assets/icons/twitter.png";
 import pixiv from "../assets/icons/pixiv.png";
 
 function About() {
-  useEffect(() => {
-    document.title = "About - archIVe";
-  }, []);
+  document.title = "About - archIVe";
 
   return(
     <>
-      <div className="profile">
-        <img className="icon" src={ icon } alt="icon" />
-        <div className="description">
-          <p className="name">ShioN</p>
-          <p className="skill">code writer: Elixir, Node, Rust, ... ( 2014~ ) /</p>
-          <p className="skill">3DCG modeler ( 2021~ )</p>
-          <div className="links">
-            <a href="https://twitter.com/arch4e_ShioN"><img src={ twitter} alt="twitter" /></a>
-            <a href="https://github.com/arch4e"><img src={ github } alt="github" /></a>
-            <a href="https://www.pixiv.net/users/20493799"><img src={ pixiv } alt="pixiv" /></a>
-          </div>
+      <span className="flex-box">
+        <div className="profile">
+          <img className="icon" src={ icon } alt="icon" />
+          <p className="name">N</p>
         </div>
-      </div>
 
-      <div className="recent-posts">
-        <h2>Recent Posts</h2>
-        <ul className="posts">
-            {
-              (posts.slice(0, 3)).map(post =>
-                <li className="post" key={ post["slug"] }>
-                  <Link to={ `posts/${post["slug"]}` }>
-                    <p className="post-title">{ post["title"] }</p>
-                    <p className="post-date">date: { post["date"] }</p>
-                    <>
-                      <span className="post-tags">
-                        <p>tag: </p>
-                        {
-                          post["tags"].map(tag => <p className="post-tag" key={ tag }>{ tag }</p>)
-                        }
-                      </span>
-                    </>
-                  </Link>
-                </li>
-              )
-            }
+        <div className="block interests">
+          <h2 className="h2-about">interests</h2>
+          <ul className="interests">
+            <li>Cyber Security</li>
+            <li>Blockchain</li>
+            <li>3DCG</li>
           </ul>
-          <span className="jump-to-posts">
-            <Link to={ `posts` } className="link">show all posts &gt;&gt;&gt;</Link>
-          </span>
-      </div>
+        </div>
+
+        <div className='block links'>
+          <h2 className='h2-about'>Links</h2>
+
+          <ul>
+            <li><a href="https://twitter.com/arch4e_ShioN"><img src={ twitter} alt="twitter" /></a></li>
+          <a href="https://github.com/arch4e"><img src={ github } alt="github" /></a>
+          <a href="https://www.pixiv.net/users/20493799"><img src={ pixiv } alt="pixiv" /></a>
+          </ul>
+        </div>
+
+        <div className='block blog'>
+          <h2 className='h2-about'>blog</h2>
+          <Link to={ `posts` } className='link'>arch4e</Link>
+        </div>
+      </span>
     </>
   );
 }
