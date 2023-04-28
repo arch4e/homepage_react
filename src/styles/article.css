@@ -3,13 +3,11 @@ video {
   padding: 0;
 }
 
-.article ul {
-  margin         : 0 0 0 2rem;
+.article ul li {
   list-style-type: square;
 }
 
-.article ol {
-  margin         : 0 0 0 2rem;
+.article ol li {
   list-style-type: decimal;
 }
 
