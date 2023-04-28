@@ -1,0 +1,61 @@
+{
+    "products": [
+        {
+            "name"        : "3Dモデル_女性素体 ( 3D Model: female body )",
+            "description" : [
+                "女性3Dモデルの素体です。",
+                "FBXデータのみ版は非商用利用のみ、",
+                "データ一式版は同梱している利用規約の範囲内でご使用ください。"
+            ],
+            "product_page": {
+                "label": "Booth",
+                "link" : "https://arch4e.booth.pm/items/4711126"
+            },
+            "images": [
+                "https://s2.booth.pm/b1ca9db0-972f-4630-81db-608e5f62176c/i/4711126/c6ed546c-e649-420a-ba0e-9d412fdd6bca_base_resized.jpg",
+                "https://s2.booth.pm/b1ca9db0-972f-4630-81db-608e5f62176c/i/4711126/6fe8d02d-bb2c-430d-a9e9-a006e317a1ea_base_resized.jpg"
+            ]
+        },
+        {
+            "name"        : "3Dモデル_手 ( 3D Model: Hand )",
+            "description" : [
+                "手の3Dモデルです。",
+                "FBXデータのみ版は非商用利用のみ、",
+                "データ一式版は同梱している利用規約の範囲内でご使用ください。"
+            ],
+            "product_page": {
+                "label": "Booth",
+                "link" : "https://arch4e.booth.pm/items/4702434"
+            },
+            "images": [
+                "https://s2.booth.pm/b1ca9db0-972f-4630-81db-608e5f62176c/i/4702434/5ac82f26-c112-431e-b699-3f53e9060288_base_resized.jpg"
+            ]
+        },
+        {
+            "name"        : "stree",
+            "description" : [
+                "BlenderのMesh/Curve編集でスナップショットを作成・管理するアドオンです。"
+            ],
+            "product_page": {
+                "label": "Booth",
+                "link" : "https://arch4e.booth.pm/items/4694745"
+            },
+            "images": [
+                ""
+            ]
+        },
+        {
+            "name"        : "bpgrip",
+            "description" : [
+                "BlenderブラシのBlend Modeをショートカット登録できるようにするアドオンです。"
+            ],
+            "product_page": {
+                "label": "Booth",
+                "link" : "https://arch4e.booth.pm/items/4566568"
+            },
+            "images": [
+                "https://s2.booth.pm/b1ca9db0-972f-4630-81db-608e5f62176c/i/4566568/4eea9d42-6a52-4dfc-8d6b-d0f004e1a0cb_base_resized.jpg"
+            ]
+        }
+    ]
+}

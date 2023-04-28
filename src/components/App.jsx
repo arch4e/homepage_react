@@ -6,6 +6,7 @@ import About   from "./About";
 import Article from "./Article";
 import Gallery from "./Gallery";
 import Log     from "./Log";
+import Products from "./Products";
 
 /* stylesheets */
 import "../styles/global.css";
@@ -20,6 +21,7 @@ function App() {
           <Route path="posts"       element={ <Log />     } />
           <Route path="posts/:slug" element={ <Article /> } />
           <Route path="gallery"     element={ <Gallery /> } />
+          <Route path="products"    element={ <Products /> } />
         </Route>
         <Route path="*" element={ <NotFound /> } />
       </Routes>
@@ -37,6 +39,7 @@ function Layout() {
         <ul className="nav">
           <li><Link to="/posts">Log</Link></li>
           <li><Link to="/gallery">Gallery</Link></li>
+          <li><Link to="/products">Products</Link></li>
         </ul>
       </div>
 

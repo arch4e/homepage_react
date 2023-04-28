@@ -1,0 +1,30 @@
+.product-link {
+  margin-left: .5rem;
+  text-decoration: underline solid;
+}
+
+.product-link:hover {
+  color: #38b48b;
+}
+
+.product-images {
+  display        : flex;
+  flex-direction : row;
+  align-items    : center;
+  justify-content: flex-start;
+  margin    : .5rem 0;
+  padding   : 0;
+  width     : auto;
+  height    : auto;
+  max-width : 70vw;
+  max-height: 30vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.product-images img {
+  margin    : 0;
+  padding   : 0 .5rem 0 0;
+  max-width : 30vw;
+  max-height: 30vh;
+}
