@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
+import { marked } from "marked";
 
 /* components */
 import AdsCard from "./AdsCard.jsx";
@@ -21,7 +21,7 @@ function Article() {
 
     fetch(`https://arch4e.com/static/posts/${slug}.md`).then(res => {
       res.text().then(text => {
-        setArticle(text)
+        setArticle(marked.parse(text))
       });
     });
   }, []);
@@ -29,9 +29,7 @@ function Article() {
   return (
     <>
       <div className="container">
-        <div className="article">
-          <ReactMarkdown children={ article } />
-        </div>
+        <div className="article" dangerouslySetInnerHTML={{__html: article}} />
 
         <div className="ads-card">
           <AdsCard />
