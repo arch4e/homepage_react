@@ -4,7 +4,6 @@ import { Link, Outlet, Route, Routes } from 'react-router-dom'
 /* components */
 import About    from './About'
 import Article  from './Article'
-import Gallery  from './Gallery'
 import Posts    from './Posts'
 import Products from './Products'
 
@@ -20,7 +19,6 @@ function App() {
           <Route index              element={ <About />   } />
           <Route path='posts'       element={ <Posts />   } />
           <Route path='posts/:slug' element={ <Article /> } />
-          <Route path='gallery'     element={ <Gallery /> } />
           <Route path='products'    element={ <Products /> } />
         </Route>
         <Route path='*' element={ <NotFound /> } />
@@ -38,7 +36,6 @@ function Layout() {
         </span>
         <ul className='nav'>
           <li><Link to='/posts'>Posts</Link></li>
-          <li><Link to='/gallery'>Gallery</Link></li>
           <li><Link to='/products'>Products</Link></li>
         </ul>
       </div>
