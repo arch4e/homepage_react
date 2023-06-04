@@ -34,7 +34,7 @@ function About() {
           <h2 className='h2-about'>Links</h2>
 
           <ul>
-            <li><a href='https://twitter.com/arch4e_ShioN'><img src={ twitter} alt='twitter' /></a></li>
+            <li><a href='https://twitter.com/arch4e_N'><img src={ twitter} alt='twitter' /></a></li>
           <a href='https://github.com/arch4e'><img src={ github } alt='github' /></a>
           <a href='https://www.pixiv.net/users/20493799'><img src={ pixiv } alt='pixiv' /></a>
           </ul>
