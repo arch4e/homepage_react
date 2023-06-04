@@ -1,6 +1,12 @@
 {
   "posts": [
     {
+      "title": "SECCON Beginners CTF 2023 writeup",
+      "slug" : "writeup-seccon-beginners-ctf-2023",
+      "date" : "2023-06-04",
+      "tags" : ["CTF", "writeup"]
+    },
+    {
       "title": "Desktop版 Google Driveのボリュームラベルを変更する",
       "slug" : "change_volume_label_of_google_drive_for_desktop",
       "date" : "2023-04-24",
