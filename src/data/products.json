@@ -1,6 +1,40 @@
 {
     "products": [
         {
+            "name"        : "MEX",
+            "description" : [
+                "Shape Keysの並べ替えを手助けするBlenderアドオンです。"
+            ],
+            "product_page": [
+                {
+                    "label": "Booth",
+                    "link" : "https://arch4e.booth.pm/items/4843394"
+                },
+                {
+                    "label": "GitHub",
+                    "link" : "https://github.com/arch4e/mex"
+                }
+            ],
+            "image": [
+                "https://s2.booth.pm/b1ca9db0-972f-4630-81db-608e5f62176c/i/4843394/c938da79-51c4-40bf-9a72-5a20ba263798_base_resized.jpg"
+            ]
+        },
+        {
+            "name"        : "PDF：モデラーのためのBlenderアドオン開発",
+            "description" : [
+                "プログラミングの知識がない層をターゲットに Blender アドオンの作成方法を解説しています。"
+            ],
+            "product_page": [
+                {
+                    "label": "Booth",
+                    "link" : "https://arch4e.booth.pm/items/4823607"
+                }
+            ],
+            "image": [
+                "https://s2.booth.pm/b1ca9db0-972f-4630-81db-608e5f62176c/i/4823607/30b09780-9d36-4d5a-a7ba-8585bdbd35de_base_resized.jpg"
+            ]
+        },
+        {
             "name"        : "3Dモデル_女性素体 ( 3D Model: female body )",
             "description" : [
                 "女性3Dモデルの素体です。",
