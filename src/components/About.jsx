@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom'
 import '../styles/about.css'
 
 /* assets */
-import icon from '../assets/pages/about/icon.png'
+import bluesky from '../assets/icons/bluesky.png'
+import booth from '../assets/icons/booth.png'
 import github from '../assets/icons/github.png'
-import twitter from '../assets/icons/twitter.png'
-import pixiv from '../assets/icons/pixiv.png'
+import icon from '../assets/pages/about/icon.png'
+import misskey from '../assets/icons/misskey.png'
+import x from '../assets/icons/x.png'
 
 function About() {
   document.title = 'About - archIVe'
@@ -34,9 +36,11 @@ function About() {
           <h2 className='h2-about'>Links</h2>
 
           <ul>
-            <li><a href='https://twitter.com/arch4e_N'><img src={ twitter} alt='twitter' /></a></li>
-          <a href='https://github.com/arch4e'><img src={ github } alt='github' /></a>
-          <a href='https://www.pixiv.net/users/20493799'><img src={ pixiv } alt='pixiv' /></a>
+            <li><a href='https://twitter.com/arch4e_N'><img src={ x } alt='x ( twitter )' /></a></li>
+            <li><a href='https://misskey.io/@arch4e'><img src={ misskey } alt='misskey' /></a></li>
+            <li><a href='https://bsky.app/profile/arch4e.bsky.social'><img src={ bluesky } alt='bluesky' /></a></li>
+            <li><a href='https://arch4e.booth.pm/'><img src={ booth } alt='booth' /></a></li>
+            <li><a href='https://github.com/arch4e'><img src={ github } alt='github' /></a></li>
           </ul>
         </div>
 
@@ -50,3 +54,4 @@ function About() {
 }
 
 export default About
+
