@@ -45,7 +45,7 @@ function Layout() {
       </div>
 
       <div id='footer'>
-        <p>&copy; 2022 arch4e.com all rights reserved.</p>
+        <p>&copy; 2022-2023 arch4e.com all rights reserved.</p>
       </div>
     </>
   )
